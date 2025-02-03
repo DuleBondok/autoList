@@ -1,6 +1,15 @@
+@font-face {
+  font-family: IBM;
+  src: url("./fonts/IBM.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: rgb(16, 9, 63);
 }
 
 header {
@@ -15,7 +24,7 @@ header {
 }
 
 .carImg {
-  height: 16vh;
+  height: 18vh;
   margin-right: 2vw;
 }
 
@@ -97,6 +106,85 @@ header {
 }
 
 .carMakeName {
-  font-size: 10rem;
+  font-size: 2rem;
   color: black;
+  font-family: IBM;
+  margin-top: 2vh;
+}
+
+.listOfCars {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 10vh;
+  left: 5vw;
+  width: 90vw;
+  gap: 5vw;
+}
+
+.carMakeDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  width: 15vw;
+  height: 40vh;
+  border-radius: 1vh;
+  align-items: center;
+}
+
+.carMakeDiv:hover{
+  cursor: pointer;
+  scale:1.1;
+}
+
+.carMakeImg {
+  height: 18vh;
+  margin-top: 5vh;
+  max-width: 13vw;
+}
+
+.addNewCarDiv {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  position: relative;
+  left: 10vw;
+  align-items: center;
+  top: 8vh;
+  margin-bottom: 20vh;
+}
+
+.newCarLabel {
+  color: orange;
+  font-family: IBM;
+  font-size: 1.5rem;
+}
+
+.newCarInput {
+  width: 30vw;
+  height: 4vh;
+  margin-left: 1vw;
+  font-size: 1.5rem;
+
+}
+
+.newCarForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+
+.submitNewCarBtn {
+  width: 20vw;
+  height: 5vh;
+  margin-left: 5vw;
+  font-size: 2rem;
+  font-family: IBM;
+  background-color: orange;
+  margin-top: 3vh;
+}
+
+.submitNewCarBtn:hover {
+  cursor: pointer;
+  background-color: orangered ;
 }

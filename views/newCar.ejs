@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <form>
+            <input type="search" placeholder="Search for make or model" class="carSearch">
+        </form>
+        <img src="./carlist.png" class="carImg">
+        <form method="get" action="/new">
+            <button type="button" class="addCarBtn">
+                <span class="carBtnText">Add Car</span>
+                <span class="carBtnIcon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+            </button>
+        </form>
+    </header>
+    <div class="addNewCarDiv">
+        <form action="/new" method="post" class="newCarForm">
+            <label for="carMake" class="newCarLabel">Enter car make:</label>
+            <input type="text" name="carMake" class="newCarInput">
+            <label for="carModel" class="newCarLabel">Enter car model:</label>
+            <input type="text" name="carModel" class="newCarInput">
+            <label for="carYear" class="newCarLabel">Production year:</label>
+            <input type="number" name="carYear" class="newCarInput">
+            <label for="carPrice" class="newCarLabel">Price:</label>
+            <input type="number" name="carPrice" class="newCarInput">
+            <label for="carMileage" class="newCarLabel">Mileage:</label>
+            <input type="number" name="carMileage" class="newCarInput">
+            <label for="carHorsepower" class="newCarLabel">Horsepower:</label>
+            <input type="number" name="carHorsepower" class="newCarInput">
+            <label for="carFuel" class="newCarLabel">Fuel Type:</label>
+            <input type="text" name="carFuel" class="newCarInput">
+            <label for="carColor" class="newCarLabel">Color:</label>
+            <input type="text" name="carColor" class="newCarInput">
+            <label for="carDescription" class="newCarLabel">Description:</label>
+            <input type="text" name="carDescription" class="newCarInput">
+            <label for="carMakeImage" class="newCarLabel">MakeImage:</label>
+            <input type="text" name="carMakeImage" class="newCarInput">
+            <button type="submit" class="submitNewCarBtn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

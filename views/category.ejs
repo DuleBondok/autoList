@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoList</title>
+    <title>Cars - <%= make %></title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -13,25 +13,26 @@
         </form>
         <img src="./carlist.png" class="carImg">
         <form method="get" action="/new">
-            <button type="submit" class="addCarBtn">
+            <button type="button" class="addCarBtn">
                 <span class="carBtnText">Add Car</span>
                 <span class="carBtnIcon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
             </button>
         </form>
     </header>
-    <div class="listOfCars">
-        <% let displayedMakes = new Set(); %>
+    <div class="carList">
         <% cars.forEach(car => { %>
-            <% if (!displayedMakes.has(car.make)) { %>
-                <a href="/category/<%= encodeURIComponent(car.make) %>">
-                <div class="carMakeDiv">
-                    <h1 class="carMakeName"><%= car.make %></h1>
-                    <img src="/images/<%= car.image %>" alt="<%= car.make %>" class="carMakeImg">
-                </div>
-                </a>
-        <% displayedMakes.add(car.make); %>
-    <% } %>
-<% }) %>
+            <div class="carItem">
+                <h2><%= car.model %> - <%= car.year %></h2>
+                <img src="/images/<%= car.image %>" alt="<%= car.model %>" class="carImg">
+                <p>Price: $<%= car.price %></p>
+                <p>Mileage: <%= car.mileage %> km</p>
+                <p>Fuel Type: <%= car.fuel_type %></p>
+                <p>Horsepower: <%= car.horsepower %> HP</p>
+                <p>Color: <%= car.color %></p>
+                <p>Description: <%= car.description %></p>
+            </div>
+        <% }) %>
     </div>
+    
 </body>
 </html>
