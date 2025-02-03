@@ -1,95 +1,102 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: black;
-    height: 12vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    gap: 30vw;
+  background-color: black;
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  gap: 30vw;
 }
 
 .carImg {
-    height: 16vh;
-    margin-right: 2vw;
+  height: 16vh;
+  margin-right: 2vw;
 }
 
 .addCarBtn {
-    position: relative;
-    width: 150px;
-    height: 40px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    border: 1px solid #1c7fa7;
-    background-color: #28c1fd;
-  }
-  
-  .addCarBtn, .carBtnIcon, .carBtnText {
-    transition: all 0.3s;
-  }
-  
-  .addCarBtn .carBtnText {
-    transform: translateX(30px);
-    color: #fff;
-    font-weight: 600;
-  }
-  
-  .addCarBtn .carBtnIcon {
-    position: absolute;
-    transform: translateX(109px);
-    height: 100%;
-    width: 39px;
-    background-color: #1c7fa7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .addCarBtn .svg {
-    width: 30px;
-    stroke: #fff;
-  }
-  
-  .addCarBtn:hover {
-    background: #1c7fa7;
-  }
-  
-  .addCarBtn:hover .carBtnText {
-    color: transparent;
-  }
-  
-  .addCarBtn:hover .carBtnIcon {
-    width: 148px;
-    transform: translateX(0);
-  }
-  
-  .addCarBtn:active .carBtnIcon {
-    background-color: #1c7fa7;
-  }
-  
-  .addCarBtn:active {
-    border: 1px solid #1c7fa7;
-  }
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #1c7fa7;
+  background-color: #28c1fd;
+}
 
-  .carSearch {
-    height: 4vh;
-    width: 11vw;
-    background-image: url(/search.png);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 3vh;
-    padding-left: 1.6vw;
-    outline: #28c1fd;
-    border: none;
-    border-radius: 0.5vh;
-  }
+.addCarBtn,
+.carBtnIcon,
+.carBtnText {
+  transition: all 0.3s;
+}
 
-  .carSearch:focus {
-    border: 1px solid #1c7fa7;
-  }
+.addCarBtn .carBtnText {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.addCarBtn .carBtnIcon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #1c7fa7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addCarBtn .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.addCarBtn:hover {
+  background: #1c7fa7;
+}
+
+.addCarBtn:hover .carBtnText {
+  color: transparent;
+}
+
+.addCarBtn:hover .carBtnIcon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.addCarBtn:active .carBtnIcon {
+  background-color: #1c7fa7;
+}
+
+.addCarBtn:active {
+  border: 1px solid #1c7fa7;
+}
+
+.carSearch {
+  height: 4vh;
+  width: 11vw;
+  background-image: url(/search.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 3vh;
+  padding-left: 1.6vw;
+  outline: #28c1fd;
+  border: none;
+  border-radius: 0.5vh;
+}
+
+.carSearch:focus {
+  border: 1px solid #1c7fa7;
+}
+
+.carMakeName {
+  font-size: 10rem;
+  color: black;
+}
