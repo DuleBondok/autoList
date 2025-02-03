@@ -8,8 +8,9 @@
 </head>
 <body>
     <header>
-        <form>
-            <input type="search" placeholder="Search for make or model" class="carSearch">
+        <form method="get" action="/search">
+            <input type="search" placeholder="Search for make or model" class="carSearch" name="query">
+            <button type="submit" style="height: 4vh; background-color: #28c1fd;">Search</button>
         </form>
         <img src="./carlist.png" class="carImg">
         <form method="get" action="/new">
@@ -23,7 +24,7 @@
         <% let displayedMakes = new Set(); %>
         <% cars.forEach(car => { %>
             <% if (!displayedMakes.has(car.make)) { %>
-                <a href="/category/<%= encodeURIComponent(car.make) %>">
+                <a href="/category/<%= encodeURIComponent(car.make) %>" style="text-decoration: none;">
                 <div class="carMakeDiv">
                     <h1 class="carMakeName"><%= car.make %></h1>
                     <img src="/images/<%= car.image %>" alt="<%= car.make %>" class="carMakeImg">

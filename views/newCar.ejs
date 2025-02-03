@@ -8,8 +8,9 @@
 </head>
 <body>
     <header>
-        <form>
-            <input type="search" placeholder="Search for make or model" class="carSearch">
+        <form method="get" action="/search">
+            <input type="search" placeholder="Search for make or model" class="carSearch" name="query">
+            <button type="submit" style="height: 4vh; background-color: #28c1fd;">Search</button>
         </form>
         <img src="./carlist.png" class="carImg">
         <form method="get" action="/new">
@@ -39,9 +40,12 @@
             <input type="text" name="carColor" class="newCarInput">
             <label for="carDescription" class="newCarLabel">Description:</label>
             <input type="text" name="carDescription" class="newCarInput">
-            <label for="carMakeImage" class="newCarLabel">MakeImage:</label>
+            <label for="carMakeImage" class="newCarLabel">Make Logo:</label>
             <input type="text" name="carMakeImage" class="newCarInput">
+            <label for="carImageUrl" class="newCarLabel">Add image url of your car:</label>
+            <input type="text" name="carImageUrl" class="newCarInput">
             <button type="submit" class="submitNewCarBtn">Submit</button>
+            
         </form>
     </div>
 </body>
