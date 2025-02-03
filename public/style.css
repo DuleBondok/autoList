@@ -207,13 +207,13 @@ header {
   flex-direction: row;
   width: 100%;
   background-color: aliceblue;
-  height: 30vh;
+  height: 32vh;
   border: 2px solid black;
   border-radius: 2vh;
 }
 
 .carImgUrl {
-  height: 30vh;
+  height: 32vh;
   border-right: 1px solid rgb(100, 100, 100);
 }
 
